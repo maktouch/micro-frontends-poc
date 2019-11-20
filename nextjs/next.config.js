@@ -23,6 +23,29 @@ module.exports = nextImages(
           // data: `@import "global";`, // autoimport that into each scss
           // includePaths: ['./scss'],
         },
+
+        // config
+        webpack: (config, { isServer }) => {
+          // Fixes npm packages that depend on `fs` module
+          config.node = {
+            fs: 'empty',
+          };
+
+          // import other kind of files
+          config.module.rules.push({
+            test: /\.(eot|woff|woff2|ttf)$/,
+            use: {
+              loader: 'file-loader',
+              options: {
+                outputPath: 'static/assets',
+                publicPath: '/_next/static/assets/',
+                name: '[name].[contenthash].[ext]',
+              },
+            },
+          });
+
+          return config;
+        },
       })
     )
   )

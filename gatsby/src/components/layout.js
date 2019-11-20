@@ -9,21 +9,22 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
+import { I18nProvider } from "@lingui/react"
+
+import { Trans } from "@lingui/macro"
+
 import "./layout.css"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
-  return <div>{children}</div>
+  return (
+    <I18nProvider language="en">
+      <div>{children}</div>
+      <div>
+        <Trans>This is only in Gatsby</Trans>
+      </div>
+    </I18nProvider>
+  )
+  return
 }
 
 Layout.propTypes = {

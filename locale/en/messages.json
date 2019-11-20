@@ -1,1 +1,4 @@
-{}
+{
+  "This is only in Gatsby": "This is only in Gatsby",
+  "This is only in NEXTJS": "This is only in NEXTJS"
+}

@@ -1,0 +1,57 @@
+$icons: (
+  search: '\e900',
+  viber: '\e901',
+  globe: '\e902',
+  messenger: '\e903',
+  obs: '\e904',
+  webinair: '\e905',
+  facebook: '\e90e',
+  mixer: '\e90d',
+  hangouts: '\e90c',
+  slack: '\e90b',
+  discord: '\e909',
+  skype: '\e908',
+  youtube: '\e910',
+  twitch: '\e90f',
+  windows: '\e913',
+  player: '\e911',
+  twitter: '\e912',
+  zoom: '\e906',
+  info: '\e907',
+  check: '\e90a',
+  close: '\e914',
+  eye-hidden: '\e915',
+  eye: '\e916',
+  chevron-right: '\e917',
+  chevron-left: '\e918',
+  chevron-down: '\e919',
+  chevron-up: '\e91a',
+  play: '\e91b',
+);
+
+@font-face {
+  font-family: 'icons';
+  src: url('./static/icons.ttf') format('truetype'), url('./static/icons.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.icn {
+  display: inline-block;
+  font-family: 'icons' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  vertical-align: middle;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@each $icon, $value in $icons {
+  .icn-#{$icon}:before {
+    content: $value;
+  }
+}
