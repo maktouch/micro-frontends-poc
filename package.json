@@ -1,0 +1,18 @@
+{
+  "name": "gatsby-nextjs-components",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"yarn workspace @poc/nextjs dev\" \"yarn workspace @poc/gatsby dev\""
+  },
+  "workspaces": [
+    "gatsby",
+    "nextjs",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "concurrently": "^5.0.0"
+  }
+}

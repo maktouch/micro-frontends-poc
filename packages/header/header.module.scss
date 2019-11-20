@@ -1,0 +1,10 @@
+.container {
+  display: inline-block;
+  width: 140px;
+  height: 43px;
+  background: url('./static/logo.png') no-repeat top left transparent;
+
+  &--white {
+    background-position: bottom left;
+  }
+}
