@@ -9,7 +9,7 @@ module.exports = nextImages(
     nextCSS(
       withTM({
         // transpile-module
-        transpileModules: ['@poc/header'],
+        transpileModules: ['@poc/common'],
 
         // next-sass
         cssModules: true,

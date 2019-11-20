@@ -3,13 +3,12 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Header from "@poc/header"
+import Logo from "@poc/common/Logo"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Header />
-    <Link to="/page-2/">Go to page 2</Link>
+    <Logo />
   </Layout>
 )
 

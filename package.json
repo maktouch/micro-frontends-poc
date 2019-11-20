@@ -7,7 +7,6 @@
   "scripts": {
     "add-locale": "lingui add-locale",
     "extract": "yarn workspace @poc/nextjs extract && yarn workspace @poc/gatsby extract",
-    "compile": "lingui compile",
     "dev": "concurrently \"yarn workspace @poc/nextjs dev\" \"yarn workspace @poc/gatsby dev\""
   },
   "workspaces": [
