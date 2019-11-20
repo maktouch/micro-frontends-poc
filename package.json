@@ -5,6 +5,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "add-locale": "lingui add-locale",
+    "extract": "yarn workspace @poc/nextjs extract && yarn workspace @poc/gatsby extract",
+    "compile": "lingui compile",
     "dev": "concurrently \"yarn workspace @poc/nextjs dev\" \"yarn workspace @poc/gatsby dev\""
   },
   "workspaces": [
@@ -13,6 +16,31 @@
     "packages/*"
   ],
   "devDependencies": {
-    "concurrently": "^5.0.0"
-  }
+    "concurrently": "^5.0.0",
+    "@babel/core": "^7.7.2",
+    "@babel/plugin-proposal-class-properties": "^7.7.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/preset-react": "^7.7.0",
+    "@lingui/babel-plugin-transform-js": "^2.8.3",
+    "@lingui/babel-plugin-transform-react": "^2.8.3",
+    "@lingui/babel-preset-react": "^2.8.3",
+    "@lingui/cli": "2.8.3",
+    "@lingui/macro": "2.8.3",
+    "@typescript-eslint/eslint-plugin": "2.5.0",
+    "@typescript-eslint/parser": "2.5.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "10.x",
+    "babel-plugin-macros": "^2.6.1",
+    "babel-preset-gatsby": "^0.2.21",
+    "cross-env": "^6.0.3",
+    "eslint": "6.5.1",
+    "eslint-config-react-app": "^5.0.2",
+    "eslint-plugin-flowtype": "4.3.0",
+    "eslint-plugin-import": "2.x",
+    "eslint-plugin-jsx-a11y": "6.x",
+    "eslint-plugin-react": "7.16.0",
+    "eslint-plugin-react-hooks": "2.2.0",
+    "prettier": "^1.18.2"
+  },
+  "dependencies": {}
 }
