@@ -29,6 +29,7 @@ module.exports = nextImages(
           // Fixes npm packages that depend on `fs` module
           config.node = {
             fs: 'empty',
+            module: 'empty',
           };
 
           // import other kind of files

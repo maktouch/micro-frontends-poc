@@ -2,5 +2,9 @@
   "name": "@poc/common",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "babel-plugin-macros": "^2.7.0",
+    "preval.macro": "^3.0.0"
+  }
 }

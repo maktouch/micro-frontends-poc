@@ -8,7 +8,7 @@
     "@lingui/react": "^2.8.3",
     "@poc/common": "*",
     "classnames": "^2.2.6",
-    "gatsby": "^2.17.11",
+    "gatsby": "^2.18.1",
     "gatsby-image": "^2.2.31",
     "gatsby-plugin-compile-es6-packages": "^2.1.0",
     "gatsby-plugin-manifest": "^2.2.27",
