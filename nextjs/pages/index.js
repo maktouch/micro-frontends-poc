@@ -4,6 +4,7 @@ import Head from '../components/head';
 import Nav from '../components/nav';
 import Logo from '@poc/common/Logo';
 import LocaleSwitcher from '@poc/common/LocaleSwitcher';
+import Test from '@poc/common/Test';
 
 import { Trans } from '@lingui/macro';
 
@@ -18,6 +19,7 @@ const Home = () => (
       <div>
         <Trans>This is only in NEXTJS</Trans>
       </div>
+      <Test />
     </div>
   </I18nProvider>
 );
