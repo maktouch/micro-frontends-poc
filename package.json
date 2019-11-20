@@ -6,9 +6,9 @@
   "private": true,
   "scripts": {
     "add-locale": "lingui add-locale",
-    "extract": "yarn workspace @poc/nextjs extract && yarn workspace @poc/gatsby extract",
+    "extract": "yarn workspace @poc/nextjs extract && yarn workspace @poc/gatsby extract && yarn workspace @poc/cra extract",
     "compile": "yarn workspace @poc/nextjs compile && yarn workspace @poc/gatsby compile",
-    "dev": "concurrently \"yarn workspace @poc/nextjs dev\" \"yarn workspace @poc/gatsby dev\""
+    "dev": "concurrently \"yarn workspace @poc/nextjs dev\" \"yarn workspace @poc/gatsby dev\" \"yarn workspace @poc/cra dev\""
   },
   "workspaces": [
     "cra",

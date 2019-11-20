@@ -8,10 +8,11 @@
     "react-scripts": "3.2.0"
   },
   "scripts": {
-    "dev": "cross-env SKIP_PREFLIGHT_CHECK=true react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "extract": "lingui extract",
+    "dev": "cross-env FORCE_COLOR=true SKIP_PREFLIGHT_CHECK=true PORT=3002 rescripts start",
+    "build": "rescripts build",
+    "test": "rescripts test",
+    "eject": "rescripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -29,6 +30,10 @@
     ]
   },
   "devDependencies": {
-    "@rescripts/cli": "^0.0.13"
+    "@rescripts/cli": "^0.0.13",
+    "@rescripts/rescript-env": "^0.0.11",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-named-asset-import": "^0.3.4",
+    "rescripts-use-yarn-workspaces": "^1.1.0"
   }
 }

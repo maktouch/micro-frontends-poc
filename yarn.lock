@@ -1738,6 +1738,40 @@
     ramda "^0.26.0"
     react-dev-utils "^7.0.0"
 
+"@rescripts/rescript-env@^0.0.11":
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/@rescripts/rescript-env/-/rescript-env-0.0.11.tgz#0ea2c0c416ec52a9c8fc1e50a40982a7a614dd66"
+  integrity sha512-wXAEvoH9CBzG3NM3QpPb8417YVIS7QqKo1mF7F/LGINQURtDRdZiLGIF3bJUjcwvfN/z0xI1E62bISuCO3k03A==
+  dependencies:
+    "@rescripts/rescript-use-babel-config" "^0.0.9"
+    "@rescripts/rescript-use-eslint-config" "^0.0.10"
+    "@rescripts/rescript-use-tslint-config" "^0.0.6"
+    "@rescripts/utilities" "^0.0.6"
+    ramda "^0.26.1"
+
+"@rescripts/rescript-use-babel-config@^0.0.9":
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/@rescripts/rescript-use-babel-config/-/rescript-use-babel-config-0.0.9.tgz#18d30e85b205fd8065354f1be263bf0603d2ccfa"
+  integrity sha512-jJjqUFJRqTjFgntM3TAuPPKtxpf0rltV7hFtTTxrO2i+DqUerj0SEWZMeVWJv/t4QkBtNQBKlDD7MF3TGHflpw==
+  dependencies:
+    "@rescripts/utilities" "^0.0.6"
+
+"@rescripts/rescript-use-eslint-config@^0.0.10":
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/@rescripts/rescript-use-eslint-config/-/rescript-use-eslint-config-0.0.10.tgz#09f20509b679d50c787fee22b279e8c1310ecec0"
+  integrity sha512-guZHYGs/w50REfJYFhX03KkaFxKqj18XIknKta9/QtG9rXaYc6hR/+7nqUVwsZIvtWDT/zxXcxcSju1w3ZtUcg==
+  dependencies:
+    "@rescripts/utilities" "^0.0.6"
+
+"@rescripts/rescript-use-tslint-config@^0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@rescripts/rescript-use-tslint-config/-/rescript-use-tslint-config-0.0.6.tgz#a9b66b21164907a544df2a0c527263d1189cf1e5"
+  integrity sha512-9Jjl//tDhR/tYs2ns1Ld8njjxnykfavOk6XIudiOHYY+xKzY2TykgniO4S5cFYWEm992FOLWABNrrInSAEOofA==
+  dependencies:
+    "@rescripts/utilities" "^0.0.6"
+    ramda "^0.26.0"
+    tslint-loader "^3.5.4"
+
 "@rescripts/utilities@^0.0.6":
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/@rescripts/utilities/-/utilities-0.0.6.tgz#23202bed3c7015cb24b7fba7f3fb0660d1713d65"
@@ -6718,6 +6752,14 @@ find-versions@^3.0.0:
     array-uniq "^2.1.0"
     semver-regex "^2.0.0"
 
+find-yarn-workspace-root@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/find-yarn-workspace-root/-/find-yarn-workspace-root-1.2.1.tgz#40eb8e6e7c2502ddfaa2577c176f221422f860db"
+  integrity sha512-dVtfb0WuQG+8Ag2uWkbG79hOUzEsRrhBzgfn86g2sJPkzmcpGdghbNTfUKGTxymFrY/tLIodDzLoW9nOJ4FY8Q==
+  dependencies:
+    fs-extra "^4.0.3"
+    micromatch "^3.1.4"
+
 flat-cache@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/flat-cache/-/flat-cache-2.0.1.tgz#5d296d6f04bda44a4630a301413bdbc2ec085ec0"
@@ -6876,7 +6918,7 @@ fs-extra@7.0.1, fs-extra@^7.0.0:
     jsonfile "^4.0.0"
     universalify "^0.1.0"
 
-fs-extra@^4.0.2:
+fs-extra@^4.0.2, fs-extra@^4.0.3:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-4.0.3.tgz#0d852122e5bc5beb453fb028e9c0c9bf36340c94"
   integrity sha512-q6rbdDd1o2mAnQreO7YADIxf/Whx4AHBiRf6d+/cVT8h44ss+lHgxf1FemcqDnQt9X3ct4McHr+JMGlYSsK7Cg==
@@ -13841,6 +13883,14 @@ requires-port@^1.0.0:
   resolved "https://registry.yarnpkg.com/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
   integrity sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=
 
+rescripts-use-yarn-workspaces@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/rescripts-use-yarn-workspaces/-/rescripts-use-yarn-workspaces-1.1.0.tgz#122ae062283825316ec30c663a68589f80304e9e"
+  integrity sha512-lTyubLJ5We7WPHHdbI7KFPANlYPAqyWzDX24uVv3OjxoUel7pR4cWINrm5qrXtcSyzHbwhNzouH59rKvW6Zrog==
+  dependencies:
+    cross-spawn "^6.0.5"
+    find-yarn-workspace-root "^1.2.1"
+
 resolve-cwd@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/resolve-cwd/-/resolve-cwd-2.0.0.tgz#00a9f7387556e27038eae232caa372a6a59b665a"
@@ -13960,7 +14010,7 @@ rgba-regex@^1.0.0:
   resolved "https://registry.yarnpkg.com/rgba-regex/-/rgba-regex-1.0.0.tgz#43374e2e2ca0968b0ef1523460b7d730ff22eeb3"
   integrity sha1-QzdOLiyglosO8VI0YLfXMP8i7rM=
 
-rimraf@2, rimraf@^2.2.8, rimraf@^2.5.4, rimraf@^2.6.1, rimraf@^2.6.3:
+rimraf@2, rimraf@^2.2.8, rimraf@^2.4.4, rimraf@^2.5.4, rimraf@^2.6.1, rimraf@^2.6.3:
   version "2.7.1"
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.7.1.tgz#35797f13a7fdadc566142c29d4f07ccad483e3ec"
   integrity sha512-uWjbaKIK3T1OSVptzX7Nl6PvQ3qAGtKEtVRjRuazjfL3Bx5eI409VZSqgND+4UNnmzLVdPj9FqFJNPqBZFve4w==
@@ -15553,6 +15603,17 @@ tslib@^1.6.0, tslib@^1.8.1, tslib@^1.9.0:
   version "1.10.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.10.0.tgz#c3c19f95973fb0a62973fb09d90d961ee43e5c8a"
   integrity sha512-qOebF53frne81cf0S9B41ByenJ3/IuH8yJKngAX35CmiZySA0khhkovshKK+jGCaMnVomla7gVlIcc3EvKPbTQ==
+
+tslint-loader@^3.5.4:
+  version "3.5.4"
+  resolved "https://registry.yarnpkg.com/tslint-loader/-/tslint-loader-3.5.4.tgz#052af7f0772434451ea1b247bb55407f878a4c40"
+  integrity sha512-jBHNNppXut6SgZ7CsTBh+6oMwVum9n8azbmcYSeMlsABhWWoHwjq631vIFXef3VSd75cCdX3rc6kstsB7rSVVw==
+  dependencies:
+    loader-utils "^1.0.2"
+    mkdirp "^0.5.1"
+    object-assign "^4.1.1"
+    rimraf "^2.4.4"
+    semver "^5.3.0"
 
 tsutils@^3.17.1:
   version "3.17.1"
