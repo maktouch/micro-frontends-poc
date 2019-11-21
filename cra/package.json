@@ -8,7 +8,6 @@
     "react-scripts": "3.2.0"
   },
   "scripts": {
-    "extract": "lingui extract",
     "dev": "cross-env FORCE_COLOR=true SKIP_PREFLIGHT_CHECK=true PORT=3002 rescripts start",
     "build": "rescripts build",
     "test": "rescripts test",

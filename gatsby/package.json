@@ -29,7 +29,6 @@
   ],
   "license": "MIT",
   "scripts": {
-    "extract": "cross-env BABEL_ENV=extract lingui extract",
     "build": "gatsby build",
     "dev": "gatsby develop -p 3001",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",

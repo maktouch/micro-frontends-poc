@@ -5,7 +5,8 @@
 - ✅ Gatsby
   - ✅ Everything works!
 - ✅ NextJS
-  - ❌ Broken, no support for macros inside of packages
+  - ✅ Everything works!
+  - ✅ SSR works!
 - ✅ Packages
   - ✅ SCSS Modules
   - ✅ Image import

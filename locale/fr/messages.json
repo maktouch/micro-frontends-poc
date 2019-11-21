@@ -1,5 +1,6 @@
 {
-  "This is only in CRA": "",
+  "This is from the common package": "",
+  "This is only in Create React App": "",
   "This is only in Gatsby": "",
   "This is only in NEXTJS": ""
 }

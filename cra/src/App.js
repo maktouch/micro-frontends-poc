@@ -15,7 +15,7 @@ function App() {
         <div>
           <Logo />
           <LocaleSwitcher />
-          <Trans>This is only in CRA</Trans>
+          <Trans>This is only in Create React App</Trans>
           <Test />
         </div>
       </div>
